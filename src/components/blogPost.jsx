@@ -23,8 +23,6 @@ class BlogPost extends Component {
     const apiResponse = await response.json();
     const { posts } = apiResponse.data.user.publication;
     this.setState({ posts: posts});
-
-    console.log(posts); 
   };
 
 
